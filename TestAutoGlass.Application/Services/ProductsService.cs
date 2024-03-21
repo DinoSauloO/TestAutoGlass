@@ -15,19 +15,19 @@ namespace TestAutoGlass.Application.Services
         {
             _productsRepository = productsRepository;
         }
-        public async Task<Products> GetByIdAsync(int id) => 
+        public async Task<Products> GetByIdAsync(int id) =>
             await _productsRepository.GetByIdAsync(id);
 
-        public async Task<IEnumerable<Products>> GetAllAsync(ProductsRequest productParams, int pageNumber, int pageQuantity) => 
+        public async Task<IEnumerable<Products>> GetAllAsync(ProductsRequest productParams, int pageNumber, int pageQuantity) =>
             await _productsRepository.GetAllAsync(productParams, pageNumber, pageQuantity);
 
-        public async Task<Products> CreateAsync(Products product) => 
+        public async Task<Products> CreateAsync(Products product) =>
             await _productsRepository.CreateAsync(product);
 
-        public async Task<Products> UpdateAsync(Products product) => 
+        public async Task<Products> UpdateAsync(Products product) =>
             await _productsRepository.UpdateAsync(product);
 
-        public async Task<bool> DeleteAsync(int id) => 
+        public async Task<bool> DeleteAsync(int id) =>
             await _productsRepository.SoftDeleteAsync(id);
     }
 }

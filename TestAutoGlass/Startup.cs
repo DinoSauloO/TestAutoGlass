@@ -1,3 +1,4 @@
+using AutoMapper;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
@@ -6,17 +7,15 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using TestAutoGlass.Application.Mappers;
 using TestAutoGlass.Application.Services;
 using TestAutoGlass.Application.Validators;
-using TestAutoGlass.Domain.Entities;
+using TestAutoGlass.Domain.Interfaces.Configuration;
 using TestAutoGlass.Domain.Interfaces.Repositories;
 using TestAutoGlass.Domain.Interfaces.Services;
 using TestAutoGlass.Domain.Requests.Create;
 using TestAutoGlass.Infra.Presistence;
 using TestAutoGlass.Infra.Repositories;
-using AutoMapper;
-using TestAutoGlass.Application.Mappers;
-using TestAutoGlass.Domain.Interfaces.Configuration;
 
 namespace TestAutoGlass
 {
