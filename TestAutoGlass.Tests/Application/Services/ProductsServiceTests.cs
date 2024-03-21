@@ -36,8 +36,6 @@ namespace TestAutoGlass.Application.Tests.Services
             Assert.Equal(expectedProduct, result);
         }
 
-        // GetByIdAsync_ShouldReturnNull_WhenInvalidIdIsProvided
-
         [Fact]
         public async Task GetByIdAsync_ShouldReturnNull_WhenInvalidIdIsProvided()
         {
